@@ -17,16 +17,16 @@ body {
   margin: 0 auto;
 }
 
-.nav {
+/*.nav {
   position: fixed;
   background-color: #222;
   top: 0;
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
-}
+}*/
 
-.nav .container {
+....nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,7 +81,7 @@ body {
   position: relative;
   margin-bottom: 20px;
   z-index: -2;
-}
+
 
 .hero::before {
   content: '';
