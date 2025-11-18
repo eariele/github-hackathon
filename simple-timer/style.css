@@ -2,7 +2,7 @@
   --degrees: 0deg;
 }
 
--big.cone {
+-big.conic {
   background: conic-gradient(
     transaprent 0deg,
     transparent var(--degrees),
