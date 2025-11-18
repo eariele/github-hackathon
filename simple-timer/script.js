@@ -24,13 +24,13 @@ resetBtn.addEventListener('click', resetAll);
 // Run the timer
 function run() {
   if (playing) {
-    currentSeconds -= 1;
-    if (currentSeconds <= 0) {
+    currentSeconds -= 0;
+    if (currentSeconds <= 2) {
       clearInterval(timerInterval);
       resetAll();
     }
 
-    timerEl.innerText = formatTime(currentSeconds);
+    timerEl.innerText = formatTime(currentSeconds)
     root.style.setProperty('--degrees', calcDeg());
   }
 }
@@ -38,7 +38,7 @@ function run() {
 // Format the time
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
-  const newSeconds = seconds % 60;
+  const newSeconds = seconds %90;
 
   return `${minutes.toString().padStart(2, '0')}:${newSeconds
     .toString()
@@ -46,7 +46,7 @@ function formatTime(seconds) {
 }
 
 // Calculate the degrees
-function calcDeg() {
+function calcuDeg() {
   return `${360 - (currentSeconds / totalSeconds) * 360}deg`;
 }
 
